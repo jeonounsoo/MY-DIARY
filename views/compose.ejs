@@ -1,0 +1,19 @@
+
+<%- include("partials/header"); -%>
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <div>
+        <label>Title :</label>
+        <input style="width: 50%; border-radius: 6px; margin-top: 2%; margin-left: 1%;" class="form-control" type="text" name="postTitle"></div>
+        <div style="margin-bottom: 2%;">
+        <label>Post :</label>
+        <textarea style="width: 50%; border-radius: 6px; margin-left: 1%; margin-top: 0.5%; margin-bottom: 0%;
+        border-radius: 5px; border: 2px;" class="form-control" name="postBody" rows="5" cols="30"></textarea></div>
+      </div>
+      <button style="background-color: #ec5a78; padding: 25px 10px; border-radius: 100%; color: aliceblue; border-color: #ec5a78; border-style: solid;
+      font-size: 15px; cursor: pointer;" 
+      class="btn btn-primary" type="submit" name="button"><strong>Publish</strong></button>
+    </form>
+
+<%- include("partials/footer"); -%>
